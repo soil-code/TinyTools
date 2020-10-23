@@ -10,7 +10,7 @@
 
 int gcd(int firstNeedGcdInteger, int lastNeedGcdInteger)
 {
-    return firstNeedGcdInteger % lastNeedGcdInteger ? gcd(lastNeedGcdInteger, firstNeedGcdInteger % lastNeedGcdInteger) : lastNeedGcdInteger;
+    return (firstNeedGcdInteger % lastNeedGcdInteger) ? gcd(lastNeedGcdInteger, firstNeedGcdInteger % lastNeedGcdInteger) : lastNeedGcdInteger;
 }
 
 
